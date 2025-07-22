@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SLC & DE Realty Group | For Sale</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    html { scroll-behavior: smooth; }
+    .bg-earth { background-color: #7B5E57; }
+    .hover\:bg-earth-hover:hover { background-color: #5C443D; }
+    .text-earth { color: #7B5E57; }
+    .active-link {
+      font-weight: bold;
+      text-decoration: none;
+      color: #F5F0E1;
+      background-image: linear-gradient(90deg, #68a673, #a67c39);
+      padding: 0.25rem 0.75rem;
+      border-radius: 0.375rem;
+      text-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+    }
+    .neocard {
+      background: #e0e0e0;
+      border-radius: 20px;
+      box-shadow: 10px 10px 30px #bebebe,
+                  -10px -10px 30px #ffffff;
+      transition: all 0.3s ease-in-out;
+    }
+    .neocard:hover {
+      transform: translateY(-5px);
+      box-shadow: 12px 12px 25px #bebebe,
+                  -12px -12px 25px #ffffff;
+    }
+  </style>
+</head>
+<body class="bg-[#f5f5f5] text-gray-900">
+
+<!-- Navbar -->
+<nav class="fixed top-0 left-0 right-0 z-50 shadow text-white bg-gradient-to-r from-green-700 to-yellow-900">
+  <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+    <a href="index.html" class="flex items-center space-x-3">
+      <img src="logo.png" alt="Logo" class="h-10 w-auto" />
+      <span class="text-white text-2xl font-semibold" style="font-family: 'Playfair Display', serif;">
+        SLC & DE Realty Group
+      </span>
+    </a>
+    <button id="menu-btn" class="md:hidden block text-white">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+        viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+    <div id="menu" class="hidden md:flex space-x-4">
+      <a href="index.html#home" class="py-2 px-3 hover:bg-earth-hover rounded-md">Home</a>
+    </div>
+  </div>
+</nav>
+<br><br><br>
+<!-- Hero Section -->
+<section class="pt-28 pb-16 bg-gradient-to-r from-amber-100 to-green-100 text-center">
+    <h1 class="text-4xl font-bold text-earth" style="font-family: 'Playfair Display', serif;">Find Your Perfect Property</h1>
+    <p class="mt-2 text-lg text-gray-600">Affordable, Accessible, and Hassle-Free Homes in Infanta</p>
+  </section>
+<!-- Property Listings Section -->
+<section id="forsale" class="mt-12 px-4 py-12 bg-[#f5f5f5]">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-3xl font-bold text-earth mb-10 text-center" style="font-family: 'Playfair Display', serif;">
+        Properties For Sale
+      </h2>
+  
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div class="bg-[#f1f5f9] rounded-2xl p-2 shadow-[10px_10px_30px_#d1d9e6,_-10px_-10px_30px_#ffffff] hover:shadow-[inset_10px_10px_20px_#d1d9e6,_inset_-10px_-10px_20px_#ffffff] overflow-hidden transition">
+          <img src="bunga.jpg" alt="Modern Bungalow" class="w-full h-48 object-cover rounded-xl mb-4">
+          <div class="px-4 pb-4 text-left">
+            <span class="text-sm font-semibold text-red-500 uppercase">For Sale</span>
+            <h3 class="text-xl font-bold text-gray-800 mt-2 mb-1">Modern Bungalow House</h3>
+            <p class="text-sm text-gray-600 mb-1">📍 Infanta, Pangasinan</p>
+            <p class="text-md font-semibold text-gray-800 mb-2">₱1.5M</p>
+            <ul class="text-sm text-gray-700 mb-4">
+              <li>Lot Area: 120 sqm</li>
+              <li>Floor Area: 85 sqm</li>
+              <li>Bedrooms: 3</li>
+            </ul>
+            <a href="">
+              <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition">View Details</button>
+            </a>
+          </div>
+        </div>
+  
+        <!-- Card 2 -->
+        <div class="bg-[#f1f5f9] rounded-2xl p-2 shadow-[10px_10px_30px_#d1d9e6,_-10px_-10px_30px_#ffffff] hover:shadow-[inset_10px_10px_20px_#d1d9e6,_inset_-10px_-10px_20px_#ffffff] overflow-hidden transition">
+          <img src="2.jpg" alt="Two-storey House" class="w-full h-48 object-cover rounded-xl mb-4">
+          <div class="px-4 pb-4 text-left">
+            <span class="text-sm font-semibold text-red-500 uppercase">For Sale</span>
+            <h3 class="text-xl font-bold text-gray-800 mt-2 mb-1">Two-Storey Family Home</h3>
+            <p class="text-sm text-gray-600 mb-1">📍 Cato, Infanta</p>
+            <p class="text-md font-semibold text-gray-800 mb-2">₱1.3M</p>
+            <ul class="text-sm text-gray-700 mb-4">
+              <li>Lot Area: 150 sqm</li>
+              <li>Floor Area: 110 sqm</li>
+              <li>Bedrooms: 4</li>
+            </ul>
+            <a href="">
+              <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition">Inquire Now</button>
+            </a>
+          </div>
+        </div>
+  
+        <!-- Card 3 -->
+        <div class="bg-[#f1f5f9] rounded-2xl p-2 shadow-[10px_10px_30px_#d1d9e6,_-10px_-10px_30px_#ffffff] hover:shadow-[inset_10px_10px_20px_#d1d9e6,_inset_-10px_-10px_20px_#ffffff] overflow-hidden transition">
+          <img src="farm.jpg" alt="Farm Lot" class="w-full h-48 object-cover rounded-xl mb-4">
+          <div class="px-4 pb-4 text-left">
+            <span class="text-sm font-semibold text-red-500 uppercase">For Sale</span>
+            <h3 class="text-xl font-bold text-gray-800 mt-2 mb-1">Farm Lot with House</h3>
+            <p class="text-sm text-gray-600 mb-1">📍 Bamban, Infanta</p>
+            <p class="text-md font-semibold text-gray-800 mb-2">2.3M</p>
+            <ul class="text-sm text-gray-700 mb-4">
+              <li>Lot Area: 10,000 sqm</li>
+              <li>Floor Area: 100 sqm</li>
+              <li>Bedrooms: 2</li>
+            </ul>
+            <a href="">
+              <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition">View Details</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-gray-200 py-10 px-4">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+    <div class="flex items-start space-x-4">
+      <img src="logo.png" alt="SLC Realty Group Logo" class="w-12 h-12 object-contain">
+      <div>
+        <h3 class="text-2xl font-bold text-earth mb-1" style="font-family: 'Playfair Display', serif;">
+          SLC & DE Realty Group
+        </h3>
+        <p class="text-sm text-gray-400">
+          Helping you find your dream home in Infanta and beyond.
+        </p>
+      </div>
+    </div>
+    <div>
+      <h4 class="text-lg font-semibold text-white mb-3">Quick Links</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="index.html#home" class="hover:text-earth transition">Home</a></li>
+        <li><a href="index.html#listings" class="hover:text-earth transition">Listings</a></li>
+        <li><a href="index.html#contact" class="hover:text-earth transition">Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-lg font-semibold text-white mb-3">Connect with Us</h4>
+      <div class="flex space-x-4 text-xl">
+        <a href="https://facebook.com" target="_blank" class="hover:text-blue-500 transition"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank" class="hover:text-pink-500 transition"><i class="fab fa-instagram"></i></a>
+        <a href="https://m.me/yourpage" target="_blank" class="hover:text-blue-400 transition"><i class="fab fa-facebook-messenger"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="mt-8 border-t border-gray-700 pt-6 text-center text-sm text-gray-500">
+    &copy; 2025 SLC & DE Realty Group. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>
